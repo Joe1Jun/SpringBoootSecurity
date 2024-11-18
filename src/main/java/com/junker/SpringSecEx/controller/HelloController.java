@@ -1,4 +1,4 @@
-package com.junker.SpringSecEx;
+package com.junker.SpringSecEx.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

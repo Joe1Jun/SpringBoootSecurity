@@ -1,4 +1,4 @@
-package com.junker.SpringSecEx;
+package com.junker.SpringSecEx.model;
 
 
 
