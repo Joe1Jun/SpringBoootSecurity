@@ -8,6 +8,6 @@ import com.junker.SpringSecEx.model.Users;
 @Repository
 public interface UserRepo extends JpaRepository<Users , Integer> {
 	
-	Users findByUserName(String username);
+	Users findByUsername(String username);
 
 }

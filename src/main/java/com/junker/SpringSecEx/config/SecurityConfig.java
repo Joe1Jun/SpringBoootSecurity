@@ -51,11 +51,16 @@ public class SecurityConfig {
     
     }
     
-//    @Bean
-//    public AuthenticationProvider authenticationProvider () {
-//    	
-//      
-//    }
+    @SuppressWarnings("deprecation")
+	@Bean
+    public AuthenticationProvider authenticationProvider () {
+    	
+      DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
+      provider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
+      provider.setUserDetailsService(userDetailsService);
+     
+      return provider;
+    }
     
 //    @Bean
 //    public UserDetailsService userDetailsService() {
